@@ -1,0 +1,153 @@
+* {
+    /*box-sizing: border-box;*/
+    overflow: visible;
+}
+/* Estilo del Header */
+table {
+    width: 100%;
+    border: 2px solid;
+}
+.foto {
+    width: 20%;
+    padding-top: 5px;
+}
+td {
+    height: 80px;
+    text-align: center;
+    width: 60%;
+    background-color: #ffcc66;
+    color: white;
+}
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    font-style: italic;
+}
+/*Estilo barra de navegación*/
+nav {
+    float: left;
+    margin: 0;
+    width: 20%;
+    height: auto;
+   
+}
+a {
+    color: white;
+    font-size:20px;
+    display: block;
+    background-color: #666699;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+/*Estilo Iframe*/
+article {
+    float: left;
+    width: 80%;
+    height: auto;
+}
+iframe {
+    border: none;
+}
+
+section::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+/*Estilos de secciones*/
+li,dt {
+    font-weight: bold;
+    font-size: large;
+    line-height: 2;
+    width: 1000px;
+    margin-left: 5%;
+}
+dd {
+    font-weight: bold;
+    font-size: large;
+    line-height: 1.5; 
+    margin-left: 10%;
+}
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.lista {
+    float: left;
+    width: 50%;
+}
+img {
+    float: left;
+}
+button {
+    text-align: center;
+    font-size: large;
+}
+.boton_salida, .salida a {
+    background-color: white;
+}
+footer {
+    background-color: #ffcc66;
+    width: 100%;
+    height: auto;
+    border: solid black 2px;
+}
+p {
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+/*Para celulares*/
+@media only screen and (max-width: 780px) {
+    td {
+        width: 100%;
+        height: auto;
+    }
+    .foto {
+        display: none;
+    }
+    h1 {
+        font-size: 5vw;
+    }
+    nav {
+        width: 100%;
+        height: auto;
+    }
+    article {
+        width: 100%;
+    }
+    h4, a {
+        display: inline;
+        font-size: 1.9vw;
+        padding: 0.9px;
+        margin: 0.1%;
+    }
+    img {
+        width: 50%;
+        height: auto;
+        margin-left: 85px;
+    }
+    .lista, li {
+        width: 100%;
+        font-size: 3vw;
+        margin-left: 0%;
+        padding: 0%;
+    }
+     h2 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    dt, dd{
+        font-size: 3vw;
+    }
+    button {
+        font-size: 4vw;
+    }
+    p {
+        font-size: 4vw;
+    }
+}
+
